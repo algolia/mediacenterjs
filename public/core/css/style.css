@@ -160,7 +160,7 @@ p a:hover {
 }
 header,
 #header {
-    height: 60px;
+    /*height: 60px;*/
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -168,12 +168,12 @@ header,
     padding: 10px 200px 15px 100px;
     position: relative;
     float: left;
-    overflow: hidden;
+    /*overflow: hidden;*/
     background: #383B41;
     -moz-box-shadow: 0 0 0 1px;
     -webkit-box-shadow: 0 0 0 1px;
     box-shadow: 0 0 0 1px;
-    z-index: 5;
+    z-index: 10000;
 }
 header h1,
 #header h1 {
@@ -230,6 +230,11 @@ header #filter {
     animation: fade-in 4s;
     margin: 0;
     padding: 0;
+}
+.twitter-typeahead {
+    vertical-align: top;
+    margin-top: 13px;
+    margin-left: 10px;
 }
 .backdropimg {
     width: 100%;

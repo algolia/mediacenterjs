@@ -11,6 +11,7 @@ block additional_scripts
     script(src="/core/js/plugins/qrcode/qrcode.min.js")
     script(src="/core/js/qrcode-generator.js")
     script(src="/core/js/indexApp.js")
+    script(src="/core/js/algolia.js")
 
 block body
     header
@@ -19,6 +20,13 @@ block body
                 .col-md-8.col-xs-12
                     img.logo(src="/core/css/img/logo.png")
                     h1 MediacenterJS
+                    input(
+                        class='typeahead'
+                        type='text'
+                        placeholder='Search my music'
+                        id='user-search'
+                        spellcheck='false'
+                        )
                     -if(allowed === 'no')
                         h4 Parental lock enabled
                     div.upgrade-right.boxed(ng-show="newVersion && !updating")
