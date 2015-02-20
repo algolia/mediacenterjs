@@ -233,7 +233,7 @@ p a:hover {
 }
 
 
-.homepage header{height:75px;}
+/*.homepage header{height:75px;}*/
 
 
 header {
@@ -245,7 +245,7 @@ header {
     position: relative;
     float: left;
     background: #232428;
-    overflow: hidden;
+    /*overflow: hidden;*/
     border-bottom: 0;
     box-shadow: none;
 }
